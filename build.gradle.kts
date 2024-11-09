@@ -19,11 +19,15 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.springframework.cloud:spring-cloud-config-server:4.1.3")
+
+    implementation("org.springframework.boot:spring-boot-starter-security:3.3.5")
+
+    implementation("org.springframework.boot:spring-boot-starter:3.3.5")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.3.5")
+    runtimeOnly("org.jetbrains.kotlin:kotlin-reflect:2.1.0-RC")
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:2.1.0-RC")
+    testImplementation("org.junit.platform:junit-platform-launcher:1.11.3")
 }
 
 kotlin {

@@ -6,8 +6,8 @@ import org.springframework.cloud.config.server.EnableConfigServer
 
 @SpringBootApplication
 @EnableConfigServer
-class SpringbootKotlinCloudConfigServerApplication
+class ConfigServerApplication
 
 fun main(args: Array<String>) {
-    runApplication<SpringbootKotlinCloudConfigServerApplication>(*args)
+    runApplication<ConfigServerApplication>(*args)
 }

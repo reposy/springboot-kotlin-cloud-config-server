@@ -1,1 +1,18 @@
-spring.application.name=springboot-kotlin-cloud-config-server
+server:
+  port: 8888
+
+spring:
+  application:
+    name: springboot-kotlin-cloud-config-server
+
+  security:
+    user:
+      name: config_user
+      password: config_password
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/reposy/public-config-repo
+          default-label: main
